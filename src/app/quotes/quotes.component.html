@@ -1,0 +1,8 @@
+<h1>My Quotes</h1>
+<ul>
+    <li *ngFor='let quote of quotes'>{{quote.name}}</li> 
+    <button  (click)='toogleDetails(i)'>Toogle Details</button> 
+    
+    <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes'></app-quote-details>
+    </div>
+</ul>
